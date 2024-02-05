@@ -1,0 +1,29 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/service-widgets
+- logo:
+    icon: https://www.fokan.ch/wp-content/uploads/2019/08/fokan_0.png 
+
+- resources:
+    cpu: true
+    memory: true
+    disk: /
+
+- datetime:
+    text_size: 4xl
+    format:
+      timeStyle: short
+      hourCycle: h23
+
+- search:
+    provider: [brave, google, duckduckgo]
+    focus: true
+    target: _blank
+
+- openmeteo:
+    label: Epalinges # optional
+    latitude: 46.552538 
+    longitude: 6.668710 
+    timezone: Europe/Zurich # optional
+    units: metric # or imperial
+    cache: 10 # Time in minutes to cache API responses, to stay within limits

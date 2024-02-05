@@ -1,0 +1,243 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+# icons found here https://github.com/walkxcode/dashboard-icons 
+# icons found here https://pictogrammers.com/library/mdi/
+# icons found here https://simpleicons.org/
+- Multimedia:
+    - Plex:
+        icon: plex.png # icons found here https://github.com/walkxcode/dashboard-icons
+        href: https://plex.myserver.ch 
+        sitemonitor: http://192.168.178.115:32400
+        ping: http://192.168.178.115:32400
+        statusStyle: "dot"
+        description: Plex @ FredF Home
+        widget:
+          type: plex
+          url: http://192.168.178.115:32400 
+          key:xxxxxxxxxxxxxxxxxxx_ # see https://www.plexopedia.com/plex-media-server/general/plex-token/
+    - Download Station:
+        icon: synology-download-station.png 
+        href: https://torrent.myserver.ch 
+        sitemonitor: https://192.168.178.115:8001
+        ping: https://192.168.178.115:8001
+        statusStyle: "dot"
+        description: Torrent @ FredF Home
+          #        widget:
+          #          type: downloadstation
+          #          url: https://192.168.178.115:8001
+          #          username: XXXX
+          #          password: XXXXXXXXXXX!
+- K8S:
+    - Argocd:
+        icon: argocd.png
+        href: https://argocd.myserver.ch
+        sitemonitor: https://argocd.myserver.ch
+        ping: https://192.168.178.97:30993
+        statusStyle: "dot"
+        description: Argocd @ FredF Home
+- Proxmox:
+    - Proxmox:
+        icon: proxmox.png
+        showStats: true
+        href: https://proxmox.myserver.ch
+        sitemonitor: https://proxmox.myserver.ch
+        ping: https://192.168.178.200:8006
+        statusStyle: "dot"
+        description: Proxmox @ FredF Home
+        widget:
+          type: proxmox
+          url: https://192.168.178.200:8006
+          username: api-homeland@pam!homepage
+          password: XXXXXXXXXXXXXXXXX 
+          node: proxmox
+    - Proxmox2:
+        icon: proxmox.png
+        showStats: true
+        description: Proxmox2 @ FredF Home
+        widget:
+          type: proxmox
+          url: https://192.168.178.200:8006
+          username: api-homeland@pam!homepage
+          password: XXXXXXXXXXXXXXXXXXXXXXXX 
+          node: proxmox2
+    - Proxmox3:
+        icon: proxmox.png
+        showStats: true
+        description: Proxmox3 @ FredF Home
+        widget:
+          type: proxmox
+          url: https://192.168.178.200:8006
+          username: api-homeland@pam!homepage
+          password: XXXXXXXXXXXXXXXXXXXXXX 
+          node: proxmox3
+    - Proxmox Hetzner:
+        icon: proxmox.png
+        showStats: true
+        href: https://hetzner.myserver.ch
+        sitemonitor: https://hetzner.myserver.ch
+        ping: https://xxx.xxx.193.180:8006
+        statusStyle: "dot"
+        description: Proxmox @ Hetzner
+        widget:
+          type: proxmox
+          url: https://65.108.193.180:8006
+          username: XXXXXXXXXXXX
+          password: XXXXXXXXXXXXXXXXX 
+          node: proxmox
+- Portainer:
+    - Portainer:
+        icon: portainer.png # icons found here https://github.com/walkxcode/dashboard-icons
+        href: https://portainer.myserver.ch
+        sitemonitor: https://portainer.myserver.ch
+        ping: https://192.168.178.130:9443 
+        statusStyle: "dot"
+        description: Portainer @ FredF Home
+        widget:
+          type: portainer
+          url: https://192.168.178.130:9443
+          env: 2 
+          key: XXXXXXXXXXXXXXXXXXXXXXX= 
+    - Container1:
+        icon: portainer.png # icons found here https://github.com/walkxcode/dashboard-icons
+        description: Container1 @ FredF Home
+        widget:
+          type: portainer
+          url: https://192.168.178.130:9443
+          env: 3 
+          key: XXXXXXXXXXXXXXXXXXXXXXXXX= 
+    - GaneshRAM:
+        icon: portainer.png # icons found here https://github.com/walkxcode/dashboard-icons
+        description: GaneshRAM @ FredF Home
+        widget:
+          type: portainer
+          url: https://192.168.178.130:9443
+          env: 11 
+          key: XXXXXXXXXXXXXXXXXXX
+    - KASM:
+        icon: portainer.png # icons found here https://github.com/walkxcode/dashboard-icons
+        description: KASM @ FredF Home
+        widget:
+          type: portainer
+          url: https://192.168.178.130:9443
+          env: 43 
+          key: XXXXXXXXXXXXXXXXXXXXXXX 
+    - Laptop-Swift:
+        icon: portainer.png # icons found here https://github.com/walkxcode/dashboard-icons
+        description: Laptop Swift @ FredF Home
+        widget:
+          type: portainer
+          url: https://192.168.178.130:9443
+          env: 47 
+          key: XXXXXXXXXXXXXXXXXXXXXXXXX 
+    - Acer-FredF-WSL:
+        icon: portainer.png # icons found here https://github.com/walkxcode/dashboard-icons
+        description: WSL on Acer-FredF @ FredF Home
+        widget:
+          type: portainer
+          url: https://192.168.178.130:9443
+          env: 48 
+          key: XXXXXXXXXXXXXXXXXXXXXXXX 
+- Services:
+    - Fritz-Box:
+        icon: mdi-access-point-network
+        href: https://fritz.myserver.ch/
+        sitemonitor: https://fritz.myserver.ch/
+        ping: https://fritz.myserver.ch/
+        statusStyle: "dot"
+        description: Fritz Box @ FredF Home
+        widget:
+          type: fritzbox
+          url: http://192.168.178.1
+    - PiHole raspberry:
+        icon: pi-hole.svg
+        href: https://pihole1.myserver.ch/admin/index.php
+        sitemonitor: https://pihole1.myserver.ch/admin/index.php
+        ping: http://192.168.178.254:80 
+        statusStyle: "dot"
+        description: Pi-Hole Raspberry DNS Server @ FredF Home
+        widget:
+          type: pihole
+          url: http://192.168.178.254
+          key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    - PiHole Synology:
+        icon: pi-hole.svg
+        href: https://pihole2.myserver.ch/admin/index.php
+        sitemonitor: https://pihole2.myserver.ch/admin/index.php
+        ping: http://192.168.178.253:80 
+        statusStyle: "dot"
+        description: Pi-Hole Synology DNS Server @ FredF Home
+        widget:
+          type: pihole
+          url: http://192.168.178.253
+          key: XXXXXXXXXXXXXXXXXXX
+    - Pi-Alert:
+        icon: pi-alert.png
+        href: https://pialert.myserver.ch/pialert/
+        sitemonitor: http://192.168.178.254/pialert/
+        ping: http://192.168.178.254/pialert/
+        statusStyle: "dot"
+        description: Pi-Alert Server @ FredF Home
+        widget:
+          type: pialert
+          url: http://192.168.178.254/pialert/api/
+          key: XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    - Datastore:
+        icon: synology-drive-server.png 
+        href: https://datastore.myserver.ch
+        sitemonitor: https://192.168.178.115:5501
+        ping: https://192.168.178.115:5501
+        statusStyle: "dot"
+        description: Datastore @ FredF Home
+        widget:
+          type: diskstation
+          url: https://192.168.178.115:5001
+          username: remote_stats
+          password: XXXXXXXXXX
+    - Traefik:
+        icon: traefik.png
+        showStats: true
+        href: https://traefik.myserver.ch
+        ping: https://traefik.myserver.ch
+        description: Traefik @ FredF Home
+    - KASM:
+        icon: kasm.png
+        href: https://kasm.myserver.ch
+        description: KASM @ FredF Home
+        ping: https://192.168.178.91:443 
+        statusStyle: "dot"
+    - Authelia:
+        icon: authelia.png
+        href: https://authelia.myserver.ch
+        description: Authelia @ FredF Home
+        ping: https://127.0.0.1:9091 
+        statusStyle: "dot"
+    - Uptime-Kuma:
+        icon: uptime-kuma.png
+        showStats: true
+        href: https://uptime.myserver.ch/
+        sitemonitor: https://uptime.myserver.ch/
+        ping: https://uptime.myserver.ch/
+        statusStyle: "dot"
+        description: Uptime Kuma @ FredF Home
+    - Asciinema:
+        icon: si-asciinema-#D40000
+        showStats: true
+        href: https://asciinema.myserver.ch/
+        sitemonitor: http://192.168.178.87:4000/
+        ping: https://192.168.178.87:4000/
+        statusStyle: "dot"
+        description: Asciinema @ FredF Home
+          #        widget:
+          #          type: uptimekuma
+          #          url: https://uptime.myserver.ch/status/test
+          #          key: XXXXXXXXXXXXXXXXX
+
+          #    - Cowboy:
+          #        icon: mdi-account-cowboy-hat-#FF0000 # icons found here https://pictogrammers.com/library/mdi/
+          #        href: https://localhost/
+          #        description: giddyup service
+          #    - McDonald’s:
+          #        icon: si-mcdonalds-#FFD700 # icons found here https://simpleicons.org/
+          #        href: https://www.mcdonalds.com/
+          #        description: homepage

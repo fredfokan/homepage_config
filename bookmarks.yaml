@@ -1,0 +1,33 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+- Homelab:
+    - CloudFlare:
+        - icon: cloudflare.png
+          abbr: CF
+          href: https://www.cloudflare.com/fr-fr/
+
+- Cloud:
+  - Google Drive:
+        - icon: google-drive.png
+          abbr: GD
+          href: https://drive.google.com/drive/my-drive 
+
+- Developer:
+    - Github:
+        - icon: github.png
+          abbr: GH
+          href: https://github.com/fredfokan/
+
+- Social:
+    - Reddit:
+        - icon: reddit.png
+          abbr: RE
+          href: https://reddit.com/
+
+- Entertainment:
+    - YouTube:
+        - icon: youtube.png
+          abbr: YT
+          href: https://youtube.com/
